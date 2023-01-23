@@ -1,3 +1,4 @@
 #!/bin/bash
-echo "Hello world"
+docker --help
 docker build --help
+
