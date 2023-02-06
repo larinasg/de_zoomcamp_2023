@@ -27,7 +27,7 @@ def clean(df: pd.DataFrame) -> pd.DataFrame:
     return df
 
 
-@task()
+@task(log_prints=True)
 def write_local(df: pd.DataFrame, color: str, dataset_file: str) -> Path:
     """Write DataFrame out locally as parquet file"""
 
